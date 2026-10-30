@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Alarm Clock</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="alarm-box">
+
+            <!-- Alarm Icon -->
+            <div class="alarm-icon">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/992/992700.png"
+                    alt="Alarm Clock">
+            </div>
+
+            <!-- Current Time -->
+            <h1 id="current-time">00:00:00</h1>
+
+            <!-- Alarm Selection -->
+            <div class="alarm-controls">
+
+                <select id="hours">
+                    <option value="">Hour</option>
+                </select>
+
+                <select id="minutes">
+                    <option value="">Minute</option>
+                </select>
+
+                <select id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+
+            </div>
+
+            <!-- Alarm Button -->
+            <button id="set-alarm">Set Alarm</button>
+
+            <button id="stop-alarm" class="stop-btn">
+                Stop Alarm
+            </button>
+
+            <p id="alarm-message"></p>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
